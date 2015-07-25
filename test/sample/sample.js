@@ -6,7 +6,17 @@ var fs = require("fs");
 var assert = require("assert");
 var Crawler = require("bauer-crawler");
 
-var crawler = new Crawler();
+var crawler = new Crawler({
+  config: {
+    scrape: {
+      cache: {
+        file: {
+          dir: __dirname
+        }
+      }
+    }
+  }
+});
 
 crawler.loadPlugin(__dirname + "/../../");
 
