@@ -20,9 +20,9 @@ var crawler = new Crawler({
 
 crawler.loadPlugin(__dirname + "/../../");
 
-crawler.ready(function() {
+crawler.start(function() {
   
-  this.promise()
+  return this.promise()
     .scrape(__dirname + "/sample.html",{
       "head > title": {
         title: "text",
@@ -41,12 +41,7 @@ crawler.ready(function() {
       var compare = JSON.parse(fs.readFileSync(__dirname + "/sample.json").toString());
       assert.deepEqual(output,compare);
       fs.unlinkSync(file);
-    })
-    .exit();
-  
-  
+    });
 });
-
-crawler.start();
 
 // - -------------------------------------------------------------------- - //
