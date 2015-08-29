@@ -1,11 +1,11 @@
-# bauer-crawler-scrape
+# bauer-plugin-scrape
 
-Plugin for `bauer-crawler` to make http requests.
+Plugin for `bauer` to make http requests.
 
 ## Installation
 
 ```
-npm install bauer-crawler-scrape
+npm install bauer-plugin-scrape
 ```
 
 ## Usage

@@ -1,7 +1,7 @@
 {
-  "name": "bauer-crawler-scrape",
+  "name": "bauer-plugin-scrape",
   "version": "0.1.5",
-  "description": "Plugin for bauer-crawler to scrape content.",
+  "description": "Plugin for bauer to scrape content.",
   "keywords": [
     "multi-thread",
     "multi-core",
@@ -14,7 +14,7 @@
     "scraper"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/yneves/node-bauer-crawler-scrape",
+  "homepage": "https://github.com/yneves/node-bauer-plugin-scrape",
   "author": {
     "name": "Yuri Neves Silveira",
     "url": "http://yneves.com/",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yneves/node-bauer-crawler-scrape.git"
+    "url": "https://github.com/yneves/node-bauer-plugin-scrape.git"
   },
   "scripts": {
     "test": "mocha"
