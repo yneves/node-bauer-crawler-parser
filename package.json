@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-scrape",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Plugin for bauer to scrape content.",
   "keywords": [
     "multi-thread",
@@ -31,9 +31,9 @@
     "mocha": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-cache": "^0.1.5",
-    "bauer-crawler": "^0.1.7",
-    "bauer-dom": "^0.2.0",
+    "bauer-cache": "^0.1.8",
+    "bauer-crawler": "^0.2.2",
+    "bauer-dom": "^0.2.1",
     "bauer-factory": "^2.0.4"
   },
   "main": "lib/index.js"

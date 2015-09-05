@@ -4,6 +4,10 @@
         {
             "url": "/",
             "title": "Go back to the home page"
+        },
+        {
+            "url": "/",
+            "title": "Go back to the home page"
         }
     ]
 }
