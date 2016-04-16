@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-scrape",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Plugin for bauer to scrape content.",
   "keywords": [
     "multi-thread",

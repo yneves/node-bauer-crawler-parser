@@ -1,10 +1,10 @@
 // - -------------------------------------------------------------------- - //
 
-"use strict";
+'use strict';
 
-var fs = require("fs");
-var assert = require("assert");
-var Crawler = require("bauer-crawler");
+var fs = require('fs');
+var assert = require('assert');
+var Crawler = require('bauer-crawler');
 
 var crawler = new Crawler({
   config: {
@@ -18,28 +18,28 @@ var crawler = new Crawler({
   }
 });
 
-crawler.loadPlugin(__dirname + "/../../");
+crawler.loadPlugin(__dirname + '/../../');
 
-crawler.start(function() {
-  
+crawler.start(function () {
+
   return this.Promise
-    .scrape(__dirname + "/sample.html",{
-      "head > title": {
-        title: "text",
+    .scrape(__dirname + '/sample.html', {
+      'head > title': {
+        title: 'text'
       },
-      "[id]": {
+      '[id]': {
         ids: {
-          "a[href][title]": {
-            url: "attr:href",
-            title: "attr:title"
+          'a[href][title]': {
+            url: 'attr:href',
+            title: 'attr:title'
           }
         }
       }
     })
-    .then(function(file) {
+    .then(function (file) {
       var output = JSON.parse(fs.readFileSync(file).toString());
-      var compare = JSON.parse(fs.readFileSync(__dirname + "/sample.json").toString());
-      assert.deepEqual(output,compare);
+      var compare = JSON.parse(fs.readFileSync(__dirname + '/sample.json').toString());
+      assert.deepEqual(output, compare);
       fs.unlinkSync(file);
     });
 });
